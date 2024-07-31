@@ -1,0 +1,26 @@
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .annoying-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    animation: bounce 2s infinite ease-in-out, rotate 3s infinite linear;
+  }
+  
